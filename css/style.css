@@ -1,0 +1,179 @@
+/* Small devices (phones, less than 768px) */
+/************General************/
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --main-color: #9356DC;
+    --second-color: #FF79DA;
+    --tertiary-color: #99E2D0;  
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.main-container {
+    width: 100%;
+    box-sizing: border-box;  
+}
+
+.title-section {
+    height: 24px;
+    font-weight: bold;
+}
+ /****************header****************/
+ header {
+    display: flex;
+    flex-direction : column;
+    align-items: center;
+    height : 63px;
+    
+ }
+
+ .logo {
+    object-fit: contain;
+    width : 162px; 
+    height : 44px;
+    margin-top : 14px;
+ }
+
+ .recherche {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 12/1;
+    gap: 20px;
+    background-color: #EAEAEA;
+ }
+
+ .Resa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color:#D2D2D2 ;
+}
+
+.titleResa {
+    padding: 10px 60px; 
+}
+
+.subtilteResa {
+    display: flex;
+    align-items: center;
+    padding : 0 34px;
+
+}
+.explorer {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    border-style: none; 
+    padding: 0 20px;
+    margin: 20px 0;
+}
+
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    padding : 20px;
+    gap: 20px;
+}
+
+.fonction-cards {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    border-style:  none;
+    background : #F7F7F7;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.number {
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 50%;
+    padding: 10px 15px;
+    color: white;
+    background: #9356DC
+}
+
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    padding : 20px;
+    gap: 20px;
+}
+
+.resto-cards{
+    display: flex; 
+    flex-direction: column;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.resto-cards img{
+    position: relative;
+    object-fit: cover;
+    aspect-ratio: 6/3;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.post-new {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    color : #008766;
+    font-weight: bold;
+    background: #99E2D0;
+    padding:  8px  15px;
+    margin-left: 270px;
+    margin-top: 10px;
+}
+
+.resto-text{
+    display: inline-block;
+    vertical-align: center; 
+    padding-left:13px; 
+    line-height: 5px;    
+}
+
+footer {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-color: #353535;
+    padding-top: 22px;
+    padding-left: 25px;
+    line-height: 1em;
+}
+
+.logo-footer {
+    filter:invert(100%);
+    width: 137.58px;
+    height: auto;
+}
+
+.text-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}

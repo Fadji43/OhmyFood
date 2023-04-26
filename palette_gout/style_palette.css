@@ -1,0 +1,151 @@
+/* Small devices (phones, less than 768px) */
+/************General************/
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --main-color: #9356DC;
+    --second-color: #FF79DA;
+    --tertiary-color: #99E2D0;  
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.main-container {
+    width: 100%;
+    box-sizing: border-box;  
+}
+
+.title-section {
+    height: 24px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 14px;
+}
+
+/****************header****************/
+header {
+    display: flex;
+    flex-direction : row;
+    align-items: center;
+    justify-content: space-around;
+    height : 63px;
+}
+
+ .logo {
+    object-fit: contain;
+    width : 162px; 
+    height : 44px;
+    margin-top : 14px;
+ } 
+/*****************main*****************/
+ img {
+    width: 100%
+ }
+
+ .card-menu{
+    display: flex;
+    flex-direction:column;
+    position: relative;
+    margin-top: -50px;
+    width: 95%;
+    height: 100%; 
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    background-color:#F7F7F7;
+    padding: 13px;
+    gap: 12px;
+}
+
+.title-menuIcone {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ .title-menu{
+    font-size: 28px;
+    font-family: 'Shrikhand';
+    padding: 0 10px;
+ }
+
+ .subtitle-menu {
+    width: 10%; 
+    border-bottom: 2px solid #99E2D0;
+    
+ }
+
+ .card-plat {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    border-radius: 15.0431px;
+    padding: 15px 12px;
+}
+
+.prix {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+   
+ }
+
+ .button-commander {
+    display: flex; 
+    justify-content: center;
+    width: 50%;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 20px 0;
+}
+
+.commander {
+    display: flex; 
+    justify-content: center;
+    background-color: transparent;
+    border-style: none;
+    color: white;
+    padding: 0px 10px;
+}
+/********************footer*****************/
+footer {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-color: #353535;
+    padding-top: 22px;
+    padding-left: 25px;
+    line-height: 1em;
+}
+
+.logo-footer {
+    display: flex;
+    justify-content: center;
+    filter:invert(100%);
+    width: 137.58px;
+}
+
+.text-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
