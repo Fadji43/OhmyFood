@@ -4,6 +4,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+h4 h3 h2 p {
+line-height: 20px;
+}
+
 :root {
     --main-color: #9356DC;
     --second-color: #FF79DA;
@@ -42,6 +46,7 @@ body {
     height : 44px;
     margin-top : 14px;
  }
+
 /*****************Formulaire************/
  .recherche {
     display: flex;
@@ -101,14 +106,17 @@ body {
     background : #F7F7F7;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
-    gap: 20px;
+    padding: 20px;
+    margin-left: 33px;
+    margin-right: 20px;
+    gap: 30px;
 }
 
 .number {
-    display: flex;
-    justify-content: flex-start;
+    position: relative;
+    margin-left: -10%;
     border-radius: 50%;
-    padding: 10px 15px;
+    padding: 8px 12px;
     color: white;
     background: #9356DC
 }
@@ -128,7 +136,6 @@ body {
 }
 
 .resto-cards img{
-    position: relative;
     object-fit: cover;
     aspect-ratio: 6/3;
     border-top-right-radius: 15px;
@@ -143,8 +150,8 @@ body {
     font-weight: bold;
     background: #99E2D0;
     padding:  8px  15px;
-    margin-left: 270px;
-    margin-top: 10px;
+    margin-left: 65%;
+    margin-top: 4%;
 }
 .resto-text{
     display: flex;
@@ -156,15 +163,25 @@ body {
     display: flex;
     flex-direction: column;
     width: 50%;
-    padding-left:13px;    
+    padding-left:13px; 
+    line-height: 10%;   
 }
 
 .coeur-blanc {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
     width: 50%;
+    padding-right: 25px;
     
 }
+
+.coeur-degrade:active {
+    color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    border-color: transparent;
+}
+
+/****************footer****************/
 footer {
     display: flex; 
     flex-direction: column;
@@ -173,7 +190,7 @@ footer {
     background-color: #353535;
     padding-top: 22px;
     padding-left: 25px;
-    line-height: 1em;
+    line-height: 10%;
 }
 
 .logo-footer {

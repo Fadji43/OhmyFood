@@ -38,16 +38,22 @@ header {
     display: flex;
     flex-direction : row;
     align-items: center;
-    justify-content: space-around;
-    height : 63px;
+    height: 63px;
+}
+.fleche { 
+    position: absolute;       
+    margin-left: 23px; 
+
 }
 
- .logo {
+.logo {
     object-fit: contain;
-    width : 162px; 
-    height : 44px;
-    margin-top : 14px;
- } 
+    display: flex;
+    justify-content: center;
+    width: 45%; 
+    margin-top: 14px;
+    margin-left: 105px;
+} 
 /*****************main*****************/
  img {
     width: 100%
@@ -82,8 +88,11 @@ header {
 
  .subtitle-menu {
     width: 10%; 
-    border-bottom: 2px solid #99E2D0;
-    
+    border-bottom: 2px solid #99E2D0;  
+ }
+
+ .coeur {
+    padding-right: 40px;
  }
 
  .card-plat {
@@ -102,28 +111,24 @@ header {
     justify-content: space-between;
    
  }
-
+.commander{
+   display: flex;
+   justify-content: center;
+    width: 100%;
+}
  .button-commander {
     display: flex; 
     justify-content: center;
-    width: 50%;
+    width: 40%;
     color: white;
-    font-weight: bold;
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     padding: 10px 20px;
     margin: 20px 0;
+    border-style: none;
 }
 
-.commander {
-    display: flex; 
-    justify-content: center;
-    background-color: transparent;
-    border-style: none;
-    color: white;
-    padding: 0px 10px;
-}
 /********************footer*****************/
 footer {
     display: flex; 
