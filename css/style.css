@@ -4,8 +4,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
-h4 h3 h2 p {
-line-height: 20px;
+h3 p{
+    margin: 0;
 }
 
 :root {
@@ -17,6 +17,7 @@ line-height: 20px;
 .fa-solid {
     color: var(--main-color);
 }
+
 body {
     display: flex;
     flex-direction: column;
@@ -32,7 +33,22 @@ body {
     height: 24px;
     font-weight: bold;
 }
+
+/****************loader****************/
+.loader-img{
+    position: 
+    width:
+    height: 
+    background:
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    animation: 
+
+ }
  /****************header****************/
+
+
  header {
     display: flex;
     flex-direction : column;
@@ -89,16 +105,23 @@ body {
     border-style: none; 
     padding: 0 20px;
     margin: 20px 0;
+} 
+
+.explorer:hover {
+    filter: brightness(1.25);           
 }
+
+
 /*****************Fonctionnement************/
 .fonctionnement {
     display: flex;
     flex-direction: column;
-    padding : 20px;
+    margin: 20px;
     gap: 20px;
 }
 
 .fonction-cards {
+    position: relative;
     display: flex; 
     flex-direction: row;
     align-items: center;
@@ -113,8 +136,8 @@ body {
 }
 
 .number {
-    position: relative;
-    margin-left: -10%;
+    position: absolute;
+    left: -5%;
     border-radius: 50%;
     padding: 8px 12px;
     color: white;
@@ -129,6 +152,7 @@ body {
 }
 
 .resto-cards{
+    position: relative;
     display: flex; 
     flex-direction: column;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -150,8 +174,8 @@ body {
     font-weight: bold;
     background: #99E2D0;
     padding:  8px  15px;
-    margin-left: 65%;
-    margin-top: 4%;
+    top: 10px;
+    right: 10px;
 }
 .resto-text{
     display: flex;
@@ -164,21 +188,25 @@ body {
     flex-direction: column;
     width: 50%;
     padding-left:13px; 
-    line-height: 10%;   
+    line-height: 1%;   
 }
 
-.coeur-blanc {
+.like {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 50%;
-    padding-right: 25px;
-    
+    padding-right: 25px; 
 }
 
-.coeur-degrade:active {
-    color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-    border-color: transparent;
+ .fa-heart{
+  font-size: 22px;
+}   
+.fa-heart:hover:before{
+  -webkit-background-clip: text;
+  font-weight: 900;
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-text-fill-color: transparent;
 }
 
 /****************footer****************/
@@ -190,13 +218,14 @@ footer {
     background-color: #353535;
     padding-top: 22px;
     padding-left: 25px;
-    line-height: 10%;
+    line-height: 5%;
 }
 
 .logo-footer {
     filter:invert(100%);
     width: 137.58px;
     height: auto;
+    padding-bottom: 20px;
 }
 
 .text-footer {

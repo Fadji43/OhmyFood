@@ -29,20 +29,26 @@ body {
     font-weight: bold;
 }
 
+h3 { 
+    margin:0;
+}
+
 p {
     font-size: 14px;
+    margin: 0
 }
 
 /****************header****************/
 header {
     display: flex;
     flex-direction : row;
+    justify-content: center;
     align-items: center;
     height: 63px;
 }
 .fleche { 
     position: absolute;       
-    margin-left: 23px; 
+    left: 23px; 
 
 }
 
