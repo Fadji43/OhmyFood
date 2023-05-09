@@ -30,12 +30,12 @@ body {
 }
 
 h3 { 
-    margin:0;
+    margin:0.2em;
 }
 
 p {
     font-size: 14px;
-    margin: 0
+    margin: 0.2em;
 }
 
 /****************header****************/
@@ -49,7 +49,6 @@ header {
 .fleche { 
     position: absolute;       
     left: 23px; 
-
 }
 
 .logo {
@@ -78,7 +77,6 @@ header {
     padding: 13px;
     gap: 12px;
 }
-
 .title-menuIcone {
     display: flex; 
     flex-direction: row;
@@ -109,6 +107,74 @@ header {
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     border-radius: 15.0431px;
     padding: 15px 12px;
+    transform: translateY (-100px)
+}
+
+.title-plat:hover {
+    z-index: 0;
+    text-overflow: clip;
+}
+
+.btn-coche {
+    position: absolute;
+	right: 0;
+	transition: right 1s, transform 1s;
+    border-radius: 20px;
+}
+
+.btn-coche:active{
+    right: 50%;
+	transform: translateX(50%);
+}
+.entree {
+    position: relative;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    animation: entree 0.5s ease-in-out;
+}
+
+@keyframes entree {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.plat { 
+    position: relative;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    animation: plat 1.5s ease-in-out;
+}
+
+@keyframes plat {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.dessert { 
+    position: relative;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    animation: dessert 2.5s ease-in-out;
+}
+
+@keyframes dessert {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .prix {
@@ -144,7 +210,6 @@ footer {
     background-color: #353535;
     padding-top: 22px;
     padding-left: 25px;
-    line-height: 1em;
 }
 
 .logo-footer {
@@ -152,6 +217,7 @@ footer {
     justify-content: center;
     filter:invert(100%);
     width: 137.58px;
+    padding-bottom: 18px;
 }
 
 .text-footer {
@@ -159,4 +225,15 @@ footer {
     flex-direction: row;
     align-items: center;
     gap: 10px;
+}
+
+/* bdesktop, less/equal than 1440px */
+@media (max-width: 1440px) {
+
+}
+
+
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+
 }
