@@ -7,7 +7,7 @@
     <title>OhmyFood</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https : //fonts.googleapis.com/css2?family= Roboto :wght@300;500 & display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer /">
@@ -15,9 +15,12 @@
 </head>
 
 <body>
+    <div class="loader">
+        <i class="fa fa-rotate spinner"></i>
+    </div>
     <div class="main-container">
         <div class="loader">
-            <img src="images/logo/ohmyfood.png" class="loader-img">
+            <i class="fa fa-rotate spinner"></i>
         </div>
         <header>
             <img class="logo" src="images/logo/ohmyfood.png" alt="logo Ohmyfood">     
@@ -27,13 +30,13 @@
                 <label>
                     <i class="fa-solid fa-location-dot " style="color: #030303;"></i>
                 </label> 
-                <input type="text" name="ville" id="ville" placeholder="Paris, Belleville" size="16px">
+                <input type="text" name="ville" id="ville" placeholder="Paris, Belleville" size="16">
             </nav>
             <div class="Resa">
                 <h2 class="title-section titleResa">Réservez le menu qui vous convient</h2>
                 <p class="subtilteResa">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p> 
                 <button class="explorer">
-                    <h3 strong>Explorer nos restaurants</h3>
+                    <h3>Explorer nos restaurants</h3>
                 </button>
             </div> 
             <section class="fonctionnement">
@@ -57,8 +60,7 @@
                 </div>
             </section>
             <section class="restaurants">
-                <h2>Restaurants</h2>
-                <div class="button-resto">
+                <h2 class="title-resto">Restaurants</h2>
                     <div class="resto-cards">
                         <div class="resto-cards img">
                             <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="table pain et plat">
@@ -70,7 +72,7 @@
                                 <p>Ménilmontant</p>
                             </div> 
                             <div class="like">
-                                <i class="far fa-heart"></i>   
+                               <i class="far fa-heart"></i>   
                             </div>
                         </article>
                     </div>
@@ -117,20 +119,21 @@
                         </div>
                     </article>
                 </div>   
-            </div>
             </section> 
         </main>
-        <footer>
+        <footer class="footer-reverse">
             <img src="images/logo/ohmyfood.png" alt="logo Ohmyfood" class="logo-footer">
-            <article class="text-footer">
-                <i class="fa-solid fa-utensils" style="color: #fafafa;"></i>
-                <p>Proposer un restaurant</p>
-            </article>
-            <article class="text-footer">
-                <i class="fa-solid fa-handshake-angle" style="color:#fafafa"></i> 
-                <p>Devenir partenaire</p>
-            </article> 
-            <p>Mentions légales</p>
-            <p>Contact</p>
+                <div class="card-footer">
+                    <article class="text-footer">
+                        <i class="fa-solid fa-utensils" style="color: #fafafa;"></i>
+                        <p>Proposer un restaurant</p>
+                    </article>
+                    <article class="text-footer">
+                        <i class="fa-solid fa-handshake-angle text-footer" style="color:#fafafa"></i> 
+                        <p class="text-footer">Devenir partenaire</p>
+                    </article> 
+                        <p>Mentions légales</p>
+                        <p>Contact</p>  
+                </div>
         </footer>
     </div>  
