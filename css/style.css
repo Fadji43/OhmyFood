@@ -32,8 +32,6 @@ body {
 .main-container {
     width: 100%;
     box-sizing: border-box; 
-    position: relative;
-   
 }
 
 .title-section {
@@ -46,31 +44,35 @@ body {
 .loader {
     position: absolute;
     width: 100%;
-    height: 50%;
+    height: 100%;
     background: linear-gradient(#9356DC, #FF79DA);
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    animation: loader 2s;
+    animation: loader 3s;
     animation-fill-mode: forwards;
 }
 
 @keyframes loader {
     0% {
         opacity:1;
+        z-index: 10;
     }
     90% {
-        opacity: 1;
+        opacity: 0;
+        z-index: 10;
     }  
     100% {
           opacity:0;
+          z-index: -100;
         }
   }
 
   .loader:after {
     display:none;
   }
+
 .spinner {
     font-size: 200px;
     animation: spinner-circle 3s linear;
@@ -205,11 +207,18 @@ body {
     color: white;
     background: #9356DC
 }
+.button-gray {
+    color: #7E7E7E;
+}
+.button-purple:hover {
+    color: #9356DC;
+}
+
 /*****************Restaurants************/
 .restaurants {
     display: flex;
     flex-direction: column;
-    padding : 0 20px;
+    margin: 50px 20px;
 }
 
 .resto-cards{
@@ -237,14 +246,15 @@ body {
     color : #008766;
     font-weight: bold;
     background: #99E2D0;
-    padding:  8px  15px;
-    top: 2px;
-    right: 10px;
+    padding: 10px;
+    top: 5px;
+    right: 5px;
 }
 .resto-text{
     display: flex;
     flex-direction: row;
     width: 100%;
+    padding: 0.8rem;
 }
 
 .resto-subtitle{
@@ -256,36 +266,41 @@ body {
 
 .like {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 30%;
     padding-right: 25px; 
 }
 
-/*.fa-heart{
-    display: block;
-    font-size: 22px;
-    position: relative;
+.like-white{
+   
+    opacity: 1;
     overflow: hidden;
-}   
-
-.fa-heart::after {
-    content: '';
-    position: absolute;
-    background-image:linear-gradient(#9356DC, #FF79DA);
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    top: -22px;
-    left: 0;
+}  
+.like-white:hover {
+    opacity: 0;
+} 
+.like-color {
+    position: absolute; 
+    opacity: 0;
+}
+.like-color:hover {
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    width: 5%;
+    height: 5%;
     transform-origin: top;
     transition: all 0.3s;
+}
+
+/*.far-heart:active::after{
+    top: 0px;
+}
+
+.fa-heart {
 
 }
 
-.fa-heart:active::after{
-    top: 0px;
-}*/
 
 .fa-heart:hover{
     background-clip: text;
@@ -296,7 +311,7 @@ body {
     -webkit-text-fill-color: transparent;
     transform: scale(1); 
     transition: infinite; 
-}
+}*/
 
 /****************footer****************/
 footer {

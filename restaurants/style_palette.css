@@ -56,8 +56,6 @@ header {
     display: flex;
     justify-content: center;
     width: 45%; 
-    margin-top: 14px;
-    margin-left: 105px;
 }
 
 /*****************main*****************/
@@ -93,6 +91,10 @@ header {
     font-family: 'Shrikhand';
  }
 
+ .repas {
+   padding-bottom: 30px; 
+ }
+
  .fa-heart {
     font-size: 30px;
 }
@@ -112,21 +114,77 @@ header {
 
 .card-plat{
     position: relative;
-    display: inline;
-    width: 95%;
-    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
     background-color: #FFFFFF;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     border-radius: 15.0431px;
-    padding: 15px 5px;
-    animation: card-plat 2.4s ease-in-out;
+    margin-top: 15px;
+    animation: card-plat 1s ease-in; 
+}
+
+.title-plat {
+    width: 80%; 
+    padding-left: 10px;
+}
+
+.prix {
+    width: 20%;
+}
+
+.coche {
+    position: absolute; 
+    left: 400px;  
+    display: flex; 
+    justify-content: flex-end;
+    width: 20%;
+    height: auto;
+    padding-top: 12px;
+    padding-bottom: 13px;
+    opacity: 1; 
+    overflow:  hidden;
+}
+
+.card-plat:hover .title-plat {
+    width: 60%;
+}
+.card-plat:hover .prix {
+    width: 20%
+}
+.card-plat:hover .coche{ 
+    opacity: 1;
+    display: flex; 
+    justify-content: center;
+    left: 80%;   
+    width: 20%;
+    background-color: #99E2D0 ;
+    border-radius: 0 15px 15px 0;
+    transition: left 800ms ease-in;
+}
+
+.fa-check { 
+    color: #99E2D0;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: white;
+}
+   
+
+.card-plat:hover .ellipse{
+    width: 60%;
+    text-overflow: ellipsis; 
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 @keyframes card-plat {
-    from { 
+    0% {
      opacity: 0;
  }
-     to {
+    100% {
      opacity: 1;
  }
 }
@@ -134,85 +192,30 @@ header {
      animation-delay: 0s;
  }
  .entree2{
-     animation-delay: 0.3s;
+     animation-delay: 0.1s;
  }
  .entree3{
-     animation-delay: 0.6s;
+     animation-delay: 0.2s;
  }
  .plat1{
-    animation-delay: 0.9s;
+    animation-delay: 0.3s;
 }
 .plat2{
-    animation-delay: 1.2s;
+    animation-delay: 0.4s;
 }
 .plat3{
-    animation-delay: 1.5s;
+    animation-delay: 0.5s;
 }
 .dessert1{
-    animation-delay: 1.8s;
+    animation-delay: 0.6s;
 }
 .dessert2{
-    animation-delay: 2.1s;
+    animation-delay: 0.7s;
 }
 .dessert3{
-    animation-delay: 2.4s;
+    animation-delay: 0.8s;
 }
 
-
-.title-plat {
-    width: 90%; 
-}
-
-.card-plat:active .ellipse{
-    width: 60%;
-    text-overflow: ellipsis; 
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.prix-coche {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    left: 85%;
-    top: 30%;
-    width: 40%;
-    height: 40%;
-}
-
-.card-plat:active .prix-coche{
-    transition: 500ms linear;
-    left: 73%;
-}
-
-.coche {
-    opacity: 0;
-}
-
-.card-plat:active .coche {
-    opacity:1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:40%;
-    height: 250%;
-    background-color: #99E2D0 ;
-    border-radius: 0 15px 15px 0;
-}
-
-.fa-check:before {
-    color: #99E2D0;
-    padding: 5px;
-    border-radius: 50%;
-    background-color: white;
-}
-.prix {
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between;
-   
- }
 .commander{
    display: flex;
    justify-content: center;
