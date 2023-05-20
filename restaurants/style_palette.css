@@ -82,31 +82,66 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    gap: 20px;
+    padding: 10px; 
 }
 
  .title-menu{
+    width: 9 0%;
     font-size: 28px;
-    font-family: 'Shrikhand';
+    font-family: 'Shrikhand'; 
  }
 
  .repas {
-   padding-bottom: 30px; 
+   padding-bottom: 30px;
  }
 
- .fa-heart {
-    font-size: 30px;
+ .like {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    padding-right: 25px; 
 }
 
- .fa-heart:hover{
+.like-white{
+    opacity: 1;
+}  
+.like-white:hover {
+    opacity: 0;
+}
+
+.like-color {
+    position: absolute;
+    opacity: 0;
+}
+
+.like-color:hover{
+    font-size: 28px;
+    opacity: 1;
+    display: flex; 
+    align-items: center;
+    left: 5%;
     background-clip: text;
     -webkit-background-clip: text;
-    font-weight: 900;
-    background-image: linear-gradient( #9356DC, #FF79DA);
+    font-weight: 2000;
+    background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    color: white;
     -webkit-text-fill-color: transparent;
     transform: scale(1); 
+    animation: heart 500ms ease-in-out;
 }
+
+@keyframes heart {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
  .subtitle-menu {
     width: 4%; 
     border-bottom: 2px solid #99E2D0;  
@@ -123,8 +158,10 @@ header {
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     border-radius: 15.0431px;
     margin-top: 15px;
-    animation: card-plat 1s ease-in; 
+    transition-property: opacity;
+    animation: card-plat 1s linear backwards;
 }
+
 
 .title-plat {
     width: 80%; 
@@ -144,7 +181,7 @@ header {
     height: auto;
     padding-top: 12px;
     padding-bottom: 13px;
-    opacity: 1; 
+    opacity: 0; 
     overflow:  hidden;
 }
 
@@ -188,32 +225,42 @@ header {
      opacity: 1;
  }
 }
+
  .entree1{
-     animation-delay: 0s;
+    animation-duration: 0.1s;
+    animation-delay: 0.1s;
  }
  .entree2{
-     animation-delay: 0.1s;
+    animation-duration: 0.2s; 
+    animation-delay: 0.2s;
  }
  .entree3{
-     animation-delay: 0.2s;
+    animation-duration: 0.3s;
+    animation-delay: 0.3s;
  }
  .plat1{
-    animation-delay: 0.3s;
-}
-.plat2{
+    animation-duration: 0.4s;
     animation-delay: 0.4s;
 }
-.plat3{
+.plat2{
+    animation-duration: 0.5s;
     animation-delay: 0.5s;
 }
-.dessert1{
+.plat3{ 
+    animation-duration: 0.6s;
     animation-delay: 0.6s;
 }
-.dessert2{
+.dessert1{
+    animation-duration: 0.7s;
     animation-delay: 0.7s;
 }
-.dessert3{
+.dessert2{
+    animation-duration: 0.8s;
     animation-delay: 0.8s;
+}
+.dessert3{
+    animation-duration: 0.9s;
+    animation-delay: 0.9s;
 }
 
 .commander{
@@ -277,12 +324,9 @@ footer {
      }
     
      .card-menu{
-        position: relative;
         display: flex; 
-        justify-content: center;
-        width: 50%;
-        height: 100%; 
-        margin-left: 193px; 
+        justify-content: flex-end;
+        width: 50%; 
         padding: 0 220px;
     }
     .title-menuIcone {
@@ -294,8 +338,8 @@ footer {
     }
     .card-plat{
         display: flex; 
-        justify-content: center;
-        width: 80%;
+        justify-content: flex-start;
+        width: 100%;
         
     }
     .prix-coche {
