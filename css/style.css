@@ -314,26 +314,6 @@ a {
     }
 }
 
-/*.far-heart:active::after{
-    top: 0px;
-}
-
-.fa-heart {
-
-}
-
-
-.fa-heart:hover{
-    background-clip: text;
-    -webkit-background-clip: text;
-    font-weight: 900;
-    background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-    color: white;
-    -webkit-text-fill-color: transparent;
-    transform: scale(1); 
-    transition: infinite; 
-}*/
-
 /****************footer****************/
 footer {
     display: flex; 
@@ -357,6 +337,16 @@ footer {
     flex-direction: row;
     align-items: center;
     gap: 10px;
+}
+
+.button-contact {
+    background:#353535;
+    border: none;
+}
+
+.contact {
+    color:white;
+    text-decoration: none;
 }
 
 /* desktop, less/equal than 1440px */
