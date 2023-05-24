@@ -42,7 +42,7 @@ body {
 /****************loader****************/
 
 .loader {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     background: linear-gradient(#9356DC, #FF79DA);
@@ -65,7 +65,7 @@ body {
     }  
     100% {
           opacity:0;
-          z-index: -100;
+          z-index: -10;
         }
   }
 
@@ -172,7 +172,10 @@ body {
 } 
 
 .explorer:hover {
-    filter: brightness(1.25);           
+    filter: brightness(1.15); 
+    transform: translate(3px, -3px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+    transition: 1s ease-in-out;          
 }
 
 
@@ -182,21 +185,22 @@ body {
     flex-direction: column;
     margin: 0 20px; 
 }
-
+.button-fonctionnement {
+    width: 100%;
+}
 .fonction-cards {
     position: relative;
     display: flex; 
     flex-direction: row;
     align-items: center;
     border-style:  none;
-    width: 90%;
     background : #F7F7F7;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
-    padding:  20px 30px;
-    margin-left: 33px;
+    padding:  10px 25px;
+    margin-left: 25px;
     margin-bottom: 20px;
-    gap: 20px;
+    gap: 15px;
 }
 
 .number {
@@ -218,6 +222,7 @@ body {
 .restaurants {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 50px 20px;
 }
 
@@ -321,15 +326,17 @@ footer {
     justify-content: center;
     color: white;
     background-color: #353535;
-    padding-top: 22px;
-    padding-left: 25px;
+    gap: 10px;
+    padding: 25px;
 }
-
+ .card-footer {
+    display: flex;
+    flex-direction: column; 
+ }
 .logo-footer {
     filter:invert(100%);
     width: 137.58px;
     height: auto;
-    padding-bottom: 20px;
 }
 
 .text-footer {
@@ -337,33 +344,35 @@ footer {
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    padding-bottom: 8px;
 }
 
-.button-contact {
-    background:#353535;
-    border: none;
-}
-
-.contact {
-    color:white;
+.liens-footer{
+    color: white;
     text-decoration: none;
+    padding-bottom: 10px;
 }
 
 /* desktop, less/equal than 1440px */
 @media (min-width: 600px) {
 
-    /*****************fonstionnement**************/
+/*****************fonctionnement**************/
 .fonctionnement {
     display: flex;
     flex-direction: column;
     margin: 0 175px; 
 }
 
+.fonction-cards {
+    padding:  10px 50px;
+    row-gap: 20px;
+}
 .button-fonctionnement {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: nowrap;
-    flex: 25% 1 1 ;
+    flex: 35% 1 1;
     }   
 
 /*****************restaurants**************/
@@ -399,21 +408,20 @@ footer {
     padding-bottom: 20px;
 }
 
+.footer-reverse {
+    display: flex; 
+    flex-direction: row-reverse;
+}
+ .card-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+ }
 .logo-footer {
     display: flex; 
     justify-content: flex-end;
     align-items: center;
-}
-.card-footer{
-    display: flex;
-    flex-direction: row; 
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-.footer-reverse {
-    display: flex;
-    flex-direction: row-reverse;
 }
 }
