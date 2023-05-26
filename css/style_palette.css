@@ -136,7 +136,7 @@ header {
     border-bottom: 2px solid #99E2D0;  
  }
 
-.card-plat{
+ .card-plat{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -146,17 +146,20 @@ header {
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     border-radius: 15.0431px;
     margin-top: 15px;
-    animation: card-plat 1s linear backwards;
+    animation: card-plat 1s linear backwards; 
 }
-
 
 .title-plat {
     flex: 0 0 80%;
     padding-left: 10px;
     text-overflow: ellipsis; 
     overflow: hidden;
-    white-space: nowrap;
-    
+    white-space: nowrap;     
+}
+
+.card-plat:hover .title-plat{
+    flex: 0 0 55%;
+    transition: all 500ms ease-in-out;
 }
 
 .prix {
@@ -168,39 +171,12 @@ header {
 .coche {  
     display: flex; 
     justify-content: center;
-    flex: 0 0 20%;
-    height: auto;
+    flex: 0 0 23%;
+    background-color : #99E2D0;
     padding-top: 20px;
     padding-bottom: 20px;
-    opacity: 0;  
-}
-
-.card-plat:hover .title-plat {
-    flex: 0 0 55%;
-}
-
-.card-plat:hover .prix{
-    flex: 0 0 20%;
-    animation: coche 500ms ease-in-out;
-}
-
-.card-plat:hover .coche{ 
-    opacity: 1;
-    display: flex; 
-    justify-content: center;
-    flex: 0 0 23%;
-    background-color: #99E2D0 ;
     border-radius: 0 15px 15px 0;
-    animation: coche 500ms ease-in-out;
-}
-
-@keyframes coche {
-    0% {
-        transform: translateX(40%)
-    }
-    100% {
-        transform: translateX(0) 
-    }
+    
 }
 
 .fa-check { 
@@ -211,7 +187,6 @@ header {
 }
    
 .card-plat:hover .ellipse{
-    width: 55%;
     text-overflow: ellipsis; 
     overflow: hidden;
     white-space: nowrap;
@@ -357,10 +332,6 @@ footer {
         padding: 20px;
     }
 
-    .like-color:hover{
-    left: 25%;
-    }
-
 /**********restaurants*******************/
     
     .card-plat:hover .coche{ 
@@ -398,6 +369,5 @@ footer {
     .footer-reverse {
         display: flex;
         flex-direction: row-reverse;
-    }
-   
+    } 
 }
