@@ -141,42 +141,48 @@ header {
     flex-direction: row;
     align-items: center;
     overflow: hidden;
-    width: 100%;
     background-color: #FFFFFF;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     border-radius: 15.0431px;
     margin-top: 15px;
-    animation: card-plat 1s linear backwards; 
+    animation: card-plat 1s linear backwards;
 }
 
 .title-plat {
-    flex: 0 0 80%;
+    width: 80%;
     padding-left: 10px;
     text-overflow: ellipsis; 
     overflow: hidden;
-    white-space: nowrap;     
+    white-space: nowrap; 
+    transition: all 2s;    
 }
 
 .card-plat:hover .title-plat{
-    flex: 0 0 55%;
-    transition: all 500ms ease-in-out;
+    width: 55%;
 }
 
 .prix {
-    display: flex;
-    justify-content: center;
-    flex: 0 0 20%;
+    display: flex; 
+    justify-content: flex-end;
+    width: 40%;
+    padding-right: 10px;
 }
 
 .coche {  
     display: flex; 
     justify-content: center;
-    flex: 0 0 23%;
     background-color : #99E2D0;
+    width: 5%;
     padding-top: 20px;
     padding-bottom: 20px;
-    border-radius: 0 15px 15px 0;
-    
+    border-radius: 0 15px 15px 0; 
+    opacity: 0;
+    transition: all 1s;
+}
+.card-plat:hover .coche {
+    width: 23%;
+    opacity: 1;
+    transition: all 1s;
 }
 
 .fa-check { 
