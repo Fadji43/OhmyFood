@@ -289,6 +289,11 @@ footer {
     padding: 25px;
 }
 
+.card-footer {
+    display: flex;
+    flex-direction: column; 
+ }
+ 
 .logo-footer {
     display: flex;
     justify-content: center;
@@ -299,6 +304,7 @@ footer {
 .liens-footer{
     color: white;
     text-decoration: none;
+    padding: 10px;
 }
 .text-footer {
     display: flex;

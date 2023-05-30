@@ -69,10 +69,6 @@ body {
         }
   }
 
-  .loader:after {
-    display:none;
-  }
-
 .spinner {
     font-size: 200px;
     animation: spinner-circle 3s linear;
